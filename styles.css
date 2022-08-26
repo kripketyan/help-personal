@@ -417,12 +417,14 @@ body {
 }
 
 .goods__card {
+  width: 200px;
   margin-right: 16px;
   text-decoration: none;
 }
 
 .goods__img {
   display: block;
+  width: 100%;
   border-radius: 24px;
 }
 
@@ -805,10 +807,10 @@ body {
   border: 1px solid #c6cad2;
   border-radius: 8px;
   padding: 10px 12px;
+  outline: none;
 }
 
-.shop__input:focus {
-  outline: none;
+.shop__input:focus:not(.shop__input--error) {
   border: 1px solid #c6cad2;
 }
 /* 
@@ -823,6 +825,7 @@ body {
   font-size: 14px;
   line-height: 135%;
   color: #c40628;
+  margin: 8px 0 35px;
 }
 
 /* .error {
@@ -949,12 +952,25 @@ body {
 }
 
 .order {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
   margin-top: 223px;
 }
 
 .footer--show-lg {
   display: none;
+}
+
+.shop__input--error {
+  border-color: #c40628;
+}
+
+.button-link--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 @media (min-width: 1440px) {
@@ -1044,6 +1060,7 @@ body {
   .card {
     width: 184px;
     height: 190px;
+    box-sizing: border-box;
   }
 
   .event__card {
@@ -1216,9 +1233,9 @@ body {
     border-radius: 24px 24px 0px 0px;
   }
 
-  .general-link {
+  /* .general-link {
     margin-right: 0;
-  }
+  } */
 
   .social {
     justify-content: start;
@@ -1270,5 +1287,51 @@ body {
   .partner {
     column-count: 4;
     column-gap: 10px;
+  }
+
+  .order {
+    margin: 0;
+  }
+
+  .order__title {
+    font-size: 18px;
+  }
+
+  .order__img {
+    width: 215px;
+    height: 154px;
+  }
+
+  .modal__window {
+    width: 916px;
+    position: relative;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0px 4px 80px rgb(31 42 64 / 5%);
+  }
+
+  .shop__title--modal {
+    font-size: 20px;
+  }
+
+  .shop__price--modal {
+    font-size: 20px;
+  }
+
+  .order__text {
+    width: 358px;
+    text-align: center;
+    margin: 0 0 24px;
+  }
+
+  .button-link--large-modal {
+    margin: 0;
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    z-index: 1;
   }
 }

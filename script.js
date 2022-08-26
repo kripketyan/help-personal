@@ -45,6 +45,7 @@ $(document).ready(function () {
 
     $("#shop__form").on("submit", handleSubmitShopForm);
     $(".modal").find(".goods").each(setupCarousel);
+    $(".shop__input").on("input", handleInputChange);
   }
 
   function renderSuccessPageIntoModal() {
@@ -59,13 +60,18 @@ $(document).ready(function () {
     $(".modal__content").find(".button-link").click(closeModal);
   }
 
+  function handleInputChange(event) {
+    const value = event.target.value;
+    const isValid = validatePhoneNumber(value);
+
+    activateForm(isValid);
+  }
+
   function handleSubmitShopForm(event) {
     event.preventDefault();
 
     const phone = $("#shop__phone").val();
     const isValid = validatePhoneNumber(phone);
-
-    displayError(isValid);
 
     if (isValid) {
       renderSuccessPageIntoModal();
@@ -97,11 +103,15 @@ $(document).ready(function () {
     return re.test(input_str);
   }
 
-  function displayError(valid) {
+  function activateForm(valid) {
     if (valid) {
       $("#phone_error").addClass("hidden");
+      $(".shop__input").removeClass("shop__input--error");
+      $(".button-link").removeClass("button-link--disabled");
     } else {
       $("#phone_error").removeClass("hidden");
+      $(".shop__input").addClass("shop__input--error");
+      $(".button-link").addClass("button-link--disabled");
     }
   }
 });
