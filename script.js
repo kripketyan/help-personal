@@ -1,4 +1,10 @@
+const DESKTOP_BREAKPOINT = 1440;
+
 $(document).ready(function () {
+  const SETTINGS = {
+    isDesktop: $(window).width() >= DESKTOP_BREAKPOINT,
+  };
+
   $(".events__carousel").slick({
     arrows: false,
     infinite: true,
@@ -6,13 +12,17 @@ $(document).ready(function () {
     variableWidth: true,
   });
 
-  $(".goods").each(setupCarousel);
+  $(".goods").each(setupGoodsCarousel);
 
   $(".review__carousel").slick({
     arrows: false,
     infinite: true,
     speed: 300,
     variableWidth: true,
+  });
+
+  $(window).resize(function () {
+    SETTINGS.isDesktop = $(this).width() >= DESKTOP_BREAKPOINT;
   });
 
   $(function () {
@@ -44,7 +54,7 @@ $(document).ready(function () {
     document.querySelector(".modal__content").appendChild(template);
 
     $("#shop__form").on("submit", handleSubmitShopForm);
-    $(".modal").find(".goods").each(setupCarousel);
+    $(".modal").find(".goods").each(setupGoodsCarouselToModal);
     $(".shop__input").on("input", handleInputChange);
   }
 
@@ -82,19 +92,37 @@ $(document).ready(function () {
     $(".modal").removeClass("modal--active").find(".modal__content").empty();
   }
 
-  function setupCarousel(index, element) {
-    const options = {
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      variableWidth: true,
-    };
+  function setupCarousel(element, additionalOptions) {
+    const options = Object.assign(
+      {
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        variableWidth: true,
+      },
+      additionalOptions
+    );
 
     if ($(element).children().length === 1) {
       options.centerMode = true;
     }
 
     $(element).slick(options);
+  }
+
+  function setupGoodsCarousel(index, element) {
+    setupCarousel(element, {});
+  }
+
+  function setupGoodsCarouselToModal(index, element) {
+    const options = {};
+
+    if (SETTINGS.isDesktop) {
+      options.slidesToShow = 1;
+      options.variableWidth = false;
+    }
+
+    setupCarousel(element, options);
   }
 
   function validatePhoneNumber(input_str) {

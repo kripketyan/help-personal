@@ -1334,4 +1334,8 @@ body {
     right: 27px;
     z-index: 1;
   }
+
+  .modal__product {
+    display: flex;
+  }
 }
