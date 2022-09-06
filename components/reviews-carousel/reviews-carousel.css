@@ -1,0 +1,59 @@
+.review__card {
+  width: 334px;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #f1f2f4;
+  border-radius: 24px;
+  margin-right: 16px;
+}
+
+.review__avatar {
+  margin-right: 12px;
+}
+
+.review__img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.review__box {
+  display: flex;
+  align-items: center;
+}
+
+.review__name {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #131a27;
+}
+
+.review__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #131a27;
+}
+
+.review__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #131a27;
+  margin: 16px 0 49px;
+}
+
+@media (min-width: 1440px) {
+  .review__card {
+    width: 384px;
+  }
+}

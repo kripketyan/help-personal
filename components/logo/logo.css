@@ -1,0 +1,22 @@
+.general-link {
+  text-decoration: none;
+}
+
+.general-link__text--white {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .general-link {
+    margin-right: 40px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+}

@@ -1,0 +1,61 @@
+.quote {
+  display: flex;
+  background: #f1f2f4;
+  border-radius: 24px;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.quote:last-child {
+  margin-bottom: 0;
+}
+
+.quote__img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.quote__avatar {
+  margin-right: 16px;
+}
+
+.quote__content {
+  display: inline-grid;
+}
+
+.quote__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #131a27;
+}
+
+.quote__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #596273;
+  margin: 4px 0 8px;
+}
+
+.quote__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #131a27;
+}
+
+@media (min-width: 1440px) {
+  .quote {
+    width: 384px;
+    box-sizing: border-box;
+  }
+}

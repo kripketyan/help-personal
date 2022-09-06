@@ -1,0 +1,29 @@
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #131a27;
+  margin: 0 0 32px;
+}
+
+.text--grey {
+  color: #7e889a;
+}
+
+@media (min-width: 1440px) {
+  .text {
+    font-size: 16px;
+    margin: 0 0 40px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin: 0 0 40px;
+  }
+
+  .text--large {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social__icon {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .social {
+    justify-content: start;
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,46 @@
+.goods {
+  padding-left: 16px;
+}
+
+.goods__card {
+  width: 200px;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.goods__img {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.goods__text {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #131a27;
+  margin: 16px 0 20px;
+}
+
+.goods__price {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 120%;
+  color: #131a27;
+  text-decoration: none;
+  padding: 9px 12px;
+  border: 1px solid #131a27;
+  border-radius: 8px;
+}
+
+@media (min-width: 1440px) {
+  .goods__card {
+    margin: 0 16px 0 0;
+  }
+}

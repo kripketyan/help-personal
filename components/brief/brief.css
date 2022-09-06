@@ -1,0 +1,39 @@
+.brief {
+  margin: 48px 0 8px;
+}
+
+.brief__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin: 0;
+  color: #131a27;
+  margin: 0 0 16px;
+}
+
+.brief__img {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .brief__title {
+    font-size: 88px;
+    line-height: 88px;
+  }
+
+  .brief {
+    display: flex;
+    align-items: center;
+    margin: 80px 0 0;
+  }
+
+  .brief__left {
+    margin-right: 72px;
+  }
+
+  .brief__img {
+    width: 476px;
+  }
+}
