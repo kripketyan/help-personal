@@ -1,7 +1,7 @@
 import "./footer.css";
 import "../logo/logo.css";
 import "../button/button.css";
-import "../social/button.css";
+import "../social/social.css";
 
 export default {
   title: "footer",
@@ -11,9 +11,7 @@ export const footer = () => {
   return `
   <footer class="footer">
       <div class="footer__wrapper">
-        <a class="general-link" href="#">
-          <span class="general-link__text general-link__text--white">помочь-лично.рф</span>
-        </a>
+        <a class="text text--white text--interline-sm" href="#">помочь-лично.рф</a>
       </div>
       <ul class="footer__list">
         <li class="footer__item">

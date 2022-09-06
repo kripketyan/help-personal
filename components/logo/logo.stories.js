@@ -6,7 +6,7 @@ export default {
 
 export const logo = () => {
   return `
-    <a class="general-link" href="#">
-      <img class="logo" src="./assets/svg/logo.svg" alt="логотип фонда помочь лично">
+    <a class="logo" href="#">
+      <img class="logo__img" src="/assets/svg/logo.svg" alt="логотип фонда помочь лично">
     </a>`;
 };

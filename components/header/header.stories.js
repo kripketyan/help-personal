@@ -10,8 +10,8 @@ export const header = () => {
   return `
   <header class="header">
     <div class="header__container">
-      <a class="general-link" href="#">
-        <img class="logo" src="./assets/svg/logo.svg" alt="логотип фонда помочь лично">
+      <a class="logo" href="#">
+        <img class="logo__img" src="/assets/svg/logo.svg" alt="логотип фонда помочь лично">
       </a>
       <ul class="header__list">
         <li class="header__item"><a class="header__link" href="#">Как помочь?</a></li>

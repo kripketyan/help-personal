@@ -69,4 +69,8 @@
   .burger {
     display: none;
   }
+
+  .header__logo {
+    margin-right: 40px;
+  }
 }

@@ -1,5 +1,16 @@
+:root {
+  --color-text-black: #131a27;
+  --color-text-grey: #596273;
+  --color-text-blue: #4c7dfe;
+  --color-text-white: #fff;
+}
+
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {

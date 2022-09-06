@@ -11,13 +11,13 @@ export const productForm = () => {
   <div class="modal__product">
         <div class="goods">
           <a href="#" class="goods__card">
-            <img class="goods__img" src="./assets/jpeg/t-shirt.jpg" alt="">
+            <img class="goods__img" src="/assets/jpeg/t-shirt.jpg" alt="">
           </a>
           <a href="#" class="goods__card">
-            <img class="goods__img" src="./assets/jpeg/t-shirt-front.jpg" alt="">
+            <img class="goods__img" src="/assets/jpeg/t-shirt-front.jpg" alt="">
           </a>
           <a href="#" class="goods__card">
-            <img class="goods__img" src="./assets/jpeg/t-shirt-back.jpg" alt="">
+            <img class="goods__img" src="/assets/jpeg/t-shirt-back.jpg" alt="">
           </a>
         </div>
         <div class="wrapper">

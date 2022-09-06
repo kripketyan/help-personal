@@ -3,21 +3,36 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
-  color: #131a27;
+  line-height: 1;
+  color: var(--color-text-black);
   margin: 0 0 32px;
 }
 
 .text--grey {
-  color: #7e889a;
+  color: var(--color-text-grey);
+}
+
+.text--white {
+  color: var(--color-text-white);
+}
+
+.text--blue {
+  color: var(--color-text-blue);
+}
+
+.text--bold {
+  font-weight: 600;
+}
+
+.text--interline-sm {
+  line-height: 120%;
+}
+
+.text--interline-md {
+  line-height: 150%;
 }
 
 @media (min-width: 1440px) {
-  .text {
-    font-size: 16px;
-    margin: 0 0 40px;
-  }
-
   .text {
     font-size: 16px;
     margin: 0 0 40px;

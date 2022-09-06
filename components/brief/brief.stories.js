@@ -13,7 +13,7 @@ export const brief = () => {
         областей</p>
       </div>
       <div class="brief__right">
-        <img class="brief__img" src="./assets/svg/bubble.svg" alt="">
+        <img class="brief__img" src="/assets/svg/bubble.svg" alt="">
       </div>
     </section>
   `;

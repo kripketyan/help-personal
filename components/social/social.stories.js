@@ -4,7 +4,7 @@ export default {
   title: "social",
 };
 
-export const quote = () => {
+export const social = () => {
   return `
       <div class="social">
         <div>
