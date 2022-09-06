@@ -34,8 +34,8 @@ export const footer = () => {
         </li>
       </ul>
       <div class="button">
-        <a class="button-link footer__button" href="#">
-          <span class="button-link__text">Помочь</span>
+        <a class="button footer__button" href="#">
+          <span class="button__text">Помочь</span>
         </a>
       </div>
       <div class="social">

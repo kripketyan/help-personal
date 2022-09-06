@@ -4,20 +4,19 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  color: var(--color-text-black);
-  margin: 0 0 32px;
+  color: var(--color-black);
 }
 
 .text--grey {
-  color: var(--color-text-grey);
+  color: var(--color-grey);
 }
 
 .text--white {
-  color: var(--color-text-white);
+  color: var(--color-white);
 }
 
 .text--blue {
-  color: var(--color-text-blue);
+  color: var(--color-blue);
 }
 
 .text--bold {
@@ -32,10 +31,13 @@
   line-height: 150%;
 }
 
+.text--sm {
+  font-size: 14px;
+}
+
 @media (min-width: 1440px) {
   .text {
     font-size: 16px;
-    margin: 0 0 40px;
   }
 
   .text--large {

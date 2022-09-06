@@ -67,7 +67,7 @@ $(document).ready(function () {
 
     document.querySelector(".modal__content").appendChild(template);
 
-    $(".modal__content").find(".button-link").click(closeModal);
+    $(".modal__content").find(".button").click(closeModal);
   }
 
   function handleInputChange(event) {
@@ -135,11 +135,11 @@ $(document).ready(function () {
     if (valid) {
       $("#phone_error").addClass("hidden");
       $(".shop__input").removeClass("shop__input--error");
-      $(".button-link").removeClass("button-link--disabled");
+      $(".button").removeClass("button--disabled");
     } else {
       $("#phone_error").removeClass("hidden");
       $(".shop__input").addClass("shop__input--error");
-      $(".button-link").addClass("button-link--disabled");
+      $(".button").addClass("button--disabled");
     }
   }
 });

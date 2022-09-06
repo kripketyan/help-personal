@@ -41,6 +41,8 @@
 }
 
 .footer__button {
+  display: inline-block;
+  margin: 30px;
   padding: 10px 50px !important;
 }
 
@@ -51,6 +53,10 @@
 @media (min-width: 1440px) {
   .footer {
     display: none;
+  }
+
+  .footer__button {
+    margin: 0;
   }
 
   .footer__item:last-child {

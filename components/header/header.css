@@ -18,52 +18,31 @@
 .burger {
   display: flex;
   flex-direction: column;
-  background: none;
   gap: 4px;
-  border: none;
-  cursor: pointer;
 }
 
 .burger__bar {
   display: block;
   width: 20px;
-  border-bottom: 1px solid #131a27;
+  border-bottom: 1px solid var(--color-black);
 }
 
 @media (min-width: 1440px) {
+  .header {
+    padding: 16px 16px 0;
+  }
+
   .header__list {
     display: flex;
-    padding: 0;
-    margin: 0;
   }
 
-  .header__item {
-    list-style-type: none;
+  .header__item:not(:last-child) {
     margin-right: 24px;
-  }
-
-  .header__link {
-    text-decoration: none;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #596273;
-  }
-
-  .header__item:last-child {
-    margin-right: 0;
   }
 
   .header__container {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-  }
-
-  .header {
-    padding: 16px 16px 0;
   }
 
   .burger {

@@ -1,8 +1,8 @@
 :root {
-  --color-text-black: #131a27;
-  --color-text-grey: #596273;
-  --color-text-blue: #4c7dfe;
-  --color-text-white: #fff;
+  --color-black: #131a27;
+  --color-grey: #596273;
+  --color-blue: #4c7dfe;
+  --color-white: #fff;
 }
 
 body {
@@ -13,12 +13,27 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  padding: 0 16px;
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
-.blue-text {
-  color: #4c7dfe;
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+.wrapper {
+  padding: 0 16px;
 }
 
 .about__title {

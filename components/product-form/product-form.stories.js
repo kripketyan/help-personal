@@ -49,7 +49,7 @@ export const productForm = () => {
                   <p class="shop__description">Мы используем номер телефона только для оформления и доставки заказа</p>
                 </div>
                 <div class="">
-                  <button class="button-link button-link--large button-link--filled button-link--disabled button-link--large-modal button-link__text" type="submit">Оформить заказ</button>
+                  <button class="button button--large button--filled button--disabled button--large-modal button__text" type="submit">Оформить заказ</button>
                 </div>
             </div>
           </form>
