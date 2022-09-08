@@ -6,6 +6,6 @@ export default {
 
 export const chip = () => {
   return `
-    <a class="chip__link" href="#">Помощник семьи</a>
+    <a class="chip" href="#">Помощник семьи</a>
   `;
 };

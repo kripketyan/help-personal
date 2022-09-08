@@ -3,6 +3,8 @@
   --color-grey: #596273;
   --color-blue: #4c7dfe;
   --color-white: #fff;
+
+  --sections-gap-mobile: 40px;
 }
 
 body {

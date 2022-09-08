@@ -1,12 +1,5 @@
-.chip__link {
+.chip {
   display: inline-block;
-  text-decoration: none;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 120%;
-  color: #131a27;
   border: 1px solid #000;
   border-radius: 15px;
   padding: 7.5px 16px;

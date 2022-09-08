@@ -1,19 +1,16 @@
 .note {
+  margin-bottom: var(--sections-gap-mobile);
+}
+
+.note__content {
   padding: 40px 24px;
-  background: #4c7dfe;
+  background: var(--color-blue);
   border-radius: 24px;
-  margin: 8px 0 40px;
 }
 
 .note__text {
   display: block;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
   text-align: center;
-  color: #ffffff;
 }
 
 @media (min-width: 1440px) {
