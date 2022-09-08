@@ -23,6 +23,10 @@
   font-weight: 600;
 }
 
+.text--extrabold {
+  font-weight: 700;
+}
+
 .text--interline-sm {
   line-height: 120%;
 }
@@ -33,6 +37,10 @@
 
 .text--sm {
   font-size: 14px;
+}
+
+.text--xl {
+  font-size: 40px;
 }
 
 @media (min-width: 1440px) {
