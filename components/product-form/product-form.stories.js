@@ -9,15 +9,15 @@ export default {
 export const productForm = () => {
   return `
   <div class="modal__product">
-        <div class="goods">
-          <a href="#" class="goods__card">
-            <img class="goods__img" src="/assets/jpeg/t-shirt.jpg" alt="">
+        <div class="goods-carousel">
+          <a href="#" class="good">
+            <img class="good__img" src="/assets/jpeg/t-shirt.jpg" alt="">
           </a>
-          <a href="#" class="goods__card">
-            <img class="goods__img" src="/assets/jpeg/t-shirt-front.jpg" alt="">
+          <a href="#" class="good">
+            <img class="good__img" src="/assets/jpeg/t-shirt-front.jpg" alt="">
           </a>
-          <a href="#" class="goods__card">
-            <img class="goods__img" src="/assets/jpeg/t-shirt-back.jpg" alt="">
+          <a href="#" class="good">
+            <img class="good__img" src="/assets/jpeg/t-shirt-back.jpg" alt="">
           </a>
         </div>
         <div class="wrapper">

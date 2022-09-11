@@ -1,46 +1,18 @@
+.stat {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-black);
+}
+
 .stat__number {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 100%;
-  color: #131a27;
+  margin-bottom: 8px;
 }
 
-.stat__text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #131a27;
-  margin: 8px 0 20px;
-  border-bottom: 1px solid #131a27;
-  padding: 8px 0 20px;
-  margin: 0 0 20px;
-}
-
-.stat:last-of-type .stat__text {
+.stat:last-of-type {
   border-bottom: none;
-  margin: 0;
-}
-
-.stat__link {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-  color: #4c7dfe;
-  text-decoration: none;
 }
 
 @media (min-width: 1440px) {
-  .stat__text {
+  .stat {
     border: none;
-  }
-
-  .stat__number {
-    font-size: 36px;
   }
 }

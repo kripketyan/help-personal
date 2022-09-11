@@ -7,7 +7,7 @@ export default {
 export const partner = () => {
   return `
 <div class="partner">
-  <a class="partner__link">
+  <a class="partner">
     <div class="partner__arrow">
       <div class="partner__icon" href="">
         <svg width="11" height="9" viewBox="0 0 11 9" xmlns="http://www.w3.org/2000/svg">

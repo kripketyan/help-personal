@@ -12,9 +12,9 @@ $(document).ready(function () {
     variableWidth: true,
   });
 
-  $(".goods").each(setupGoodsCarousel);
+  $(".goods-carousel").each(setupGoodsCarousel);
 
-  $(".review__carousel").slick({
+  $(".reviews__carousel").slick({
     arrows: false,
     infinite: true,
     speed: 300,
@@ -26,7 +26,7 @@ $(document).ready(function () {
   });
 
   $(function () {
-    $(".goods__card").click(function (event) {
+    $(".good").click(function (event) {
       event.preventDefault();
 
       renderProductPageIntoModal();

@@ -26,7 +26,6 @@
 .button--filled {
   background: var(--color-blue);
   border: none;
-  margin-top: 16px;
 }
 
 .button--disabled {

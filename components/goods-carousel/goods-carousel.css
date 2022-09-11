@@ -1,46 +1,29 @@
-.goods {
-  padding-left: 16px;
-}
-
-.goods__card {
+.good {
   width: 200px;
   margin-right: 16px;
-  text-decoration: none;
 }
 
-.goods__img {
+.good__img {
   display: block;
   width: 100%;
   border-radius: 24px;
+  margin-bottom: 16px;
 }
 
-.goods__text {
+.good__title {
   display: block;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-  color: #131a27;
-  margin: 16px 0 20px;
+  margin-bottom: 12px;
 }
 
-.goods__price {
+.good__price {
   display: inline-block;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 120%;
-  color: #131a27;
-  text-decoration: none;
-  padding: 9px 12px;
-  border: 1px solid #131a27;
+  padding: 12px 16px;
+  border: 1px solid var(--color-black);
   border-radius: 8px;
 }
 
 @media (min-width: 1440px) {
-  .goods__card {
+  .good {
     margin: 0 16px 0 0;
   }
 }

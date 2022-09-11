@@ -1,19 +1,16 @@
 .quote {
+  --avatar-size: 70px;
+
   display: flex;
-  background: #f1f2f4;
+  background: var(--color-grey-bg);
   border-radius: 24px;
   padding: 16px;
-  margin-bottom: 8px;
-}
-
-.quote:last-child {
-  margin-bottom: 0;
 }
 
 .quote__img {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
   object-fit: cover;
 }
 
@@ -26,31 +23,11 @@
 }
 
 .quote__name {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-  color: #131a27;
+  margin-bottom: 4px;
 }
 
 .quote__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 135%;
-  color: #596273;
-  margin: 4px 0 8px;
-}
-
-.quote__text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 135%;
-  color: #131a27;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 1440px) {

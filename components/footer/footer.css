@@ -1,49 +1,42 @@
 .footer {
-  align-items: center;
-  text-align: center;
-  background: #4c7dfe;
+  background: var(--color-blue);
   border-radius: 24px 24px 0px 0px;
-  margin-top: 80px;
+  padding: 28px 0;
+  text-align: center;
 }
 
-.footer__wrapper {
-  padding: 24px 0 16px;
+.footer__logo {
+  text-align: center;
+  padding-top: 24px 0 16px;
+  margin-bottom: 24px;
 }
 
 .footer__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 28px;
+  text-align: center;
 }
 
 .footer__link {
-  text-decoration: none;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 120%;
-  color: white;
 }
 
 .footer__item {
   margin-bottom: 16px;
 }
 
+.footer__social {
+  margin-bottom: 24px;
+}
+
 .footer__copyright {
-  padding: 24px 0;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 120%;
-  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.8;
 }
 
 .footer__button {
   display: inline-block;
-  margin: 30px;
-  padding: 10px 50px !important;
+  margin-bottom: 24px;
+  padding: 8px 50px !important;
 }
 
 .footer--show-lg {
