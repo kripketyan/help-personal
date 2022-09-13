@@ -26,13 +26,13 @@ $(document).ready(function () {
   });
 
   $(function () {
-    // $(".good").click(function (event) {
-    //   event.preventDefault();
+    $(".good").click(function (event) {
+      event.preventDefault();
 
-    renderProductPageIntoModal();
-    $(".modal").addClass("modal--active");
-    $("body").addClass("no-scroll");
-    // });
+      renderProductPageIntoModal();
+      $(".modal").addClass("modal--active");
+      $("body").addClass("no-scroll");
+    });
 
     $(".modal__close").click(closeModal);
 
@@ -117,17 +117,12 @@ $(document).ready(function () {
   }
 
   function setupGoodsCarouselToModal(index, element) {
-    const options = {
-      // responsive: [
-      //   {
-      //     breakpoint: DESKTOP_BREAKPOINT,
-      //     settings: {
-      //       slidesToShow: 1,
-      //       variableWidth: false,
-      //     },
-      //   },
-      // ],
-    };
+    const options = {};
+
+    if (SETTINGS.isDesktop) {
+      options.slidesToShow = 1;
+      options.variableWidth = false;
+    }
 
     setupCarousel(element, options);
   }
