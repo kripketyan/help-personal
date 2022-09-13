@@ -26,12 +26,13 @@ $(document).ready(function () {
   });
 
   $(function () {
-    $(".good").click(function (event) {
-      event.preventDefault();
+    // $(".good").click(function (event) {
+    //   event.preventDefault();
 
-      renderProductPageIntoModal();
-      $(".modal").addClass("modal--active");
-    });
+    renderProductPageIntoModal();
+    $(".modal").addClass("modal--active");
+    $("body").addClass("no-scroll");
+    // });
 
     $(".modal__close").click(closeModal);
 
@@ -53,9 +54,9 @@ $(document).ready(function () {
 
     document.querySelector(".modal__content").appendChild(template);
 
-    $("#shop__form").on("submit", handleSubmitShopForm);
-    $(".modal").find(".goods").each(setupGoodsCarouselToModal);
-    $(".shop__input").on("input", handleInputChange);
+    $("#product-form").on("submit", handleSubmitShopForm);
+    $(".modal").find(".goods-carousel").each(setupGoodsCarouselToModal);
+    $(".product-form__phone-input").on("input", handleInputChange);
   }
 
   function renderSuccessPageIntoModal() {
@@ -80,7 +81,7 @@ $(document).ready(function () {
   function handleSubmitShopForm(event) {
     event.preventDefault();
 
-    const phone = $("#shop__phone").val();
+    const phone = $("#product-form-phone").val();
     const isValid = validatePhoneNumber(phone);
 
     if (isValid) {
@@ -90,6 +91,7 @@ $(document).ready(function () {
 
   function closeModal() {
     $(".modal").removeClass("modal--active").find(".modal__content").empty();
+    $("body").removeClass("no-scroll");
   }
 
   function setupCarousel(element, additionalOptions) {
@@ -115,12 +117,17 @@ $(document).ready(function () {
   }
 
   function setupGoodsCarouselToModal(index, element) {
-    const options = {};
-
-    if (SETTINGS.isDesktop) {
-      options.slidesToShow = 1;
-      options.variableWidth = false;
-    }
+    const options = {
+      // responsive: [
+      //   {
+      //     breakpoint: DESKTOP_BREAKPOINT,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       variableWidth: false,
+      //     },
+      //   },
+      // ],
+    };
 
     setupCarousel(element, options);
   }
@@ -133,12 +140,16 @@ $(document).ready(function () {
 
   function activateForm(valid) {
     if (valid) {
-      $("#phone_error").addClass("hidden");
-      $(".shop__input").removeClass("shop__input--error");
+      $("#product-form-phone-error").addClass("hidden");
+      $(".product-form__phone-input").removeClass(
+        "product-form__phone-input--error"
+      );
       $(".button").removeClass("button--disabled");
     } else {
-      $("#phone_error").removeClass("hidden");
-      $(".shop__input").addClass("shop__input--error");
+      $("#product-form-phone-error").removeClass("hidden");
+      $(".product-form__phone-input").addClass(
+        "product-form__phone-input--error"
+      );
       $(".button").addClass("button--disabled");
     }
   }

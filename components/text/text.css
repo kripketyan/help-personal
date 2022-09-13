@@ -18,6 +18,10 @@
   color: var(--color-blue);
 }
 
+.text--red {
+  color: var(--color-red);
+}
+
 .text--bold {
   font-weight: 600;
 }

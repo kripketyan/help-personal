@@ -2,6 +2,7 @@
   --color-black: #131a27;
   --color-grey: #596273;
   --color-blue: #4c7dfe;
+  --color-red: #c40628;
   --color-white: #fff;
 
   --color-grey-bg: #f1f2f4;
@@ -45,6 +46,10 @@ h6,
 p {
   padding: 0;
   margin: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -146,16 +151,6 @@ p {
 
 .partners__button {
   margin-top: 8px;
-}
-
-.error {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 135%;
-  color: #c40628;
-  margin: 8px 0 35px;
 }
 
 .hidden {

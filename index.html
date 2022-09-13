@@ -84,7 +84,7 @@
     </section>
     <section class="note wrapper">
       <div class="note__content">
-        <span class="note__text text text--highlighted text--white">За время событий последних месяцев, в Мариуполе разрушено 95% зданий.
+        <span class="note__text text text--highlighted-16 text--white">За время событий последних месяцев, в Мариуполе разрушено 95% зданий.
         Люди жили в подвалах неделями. Многие потеряли близких, получили тяжёлые
         ранения.
         </span>
@@ -755,8 +755,8 @@
     </section>
     
     <template id="product-form-template">
-      <div class="modal__product">
-        <div class="goods-carousel">
+      <div class="product-form">
+        <div class="goods-carousel product-form__preview">
           <a href="#" class="good">
             <img class="good__img" src="./assets/jpeg/t-shirt.jpg" alt="">
           </a>
@@ -768,37 +768,29 @@
           </a>
         </div>
         <div class="wrapper">
-          <h4 class="shop__title shop__title--modal">Футболка женская  «Всем мира . обнимаю»</h4>
-          <span class="shop__price shop__price--modal">1400</span>
-          <p class="shop__description">Доход от продажи идет в фонд помощи беженцам «Помочь Лично»</p>
-          <form id="shop__form">
-            <p class="shop__size">Размер</p>
-            <div class="shop-form__size">
-              <input type="radio" class="shop__measure" id="S" name="size" value="S" checked>
-              <label for="S">S</label>
-              <input type="radio" class="shop__measure" id="M" name="size" value="M">
-              <label for="M">M</label>
-              <input type="radio" class="shop__measure" id="L" name="size" value="L">
-              <label for="L">L</label>
-              <input type="radio" class="shop__measure" id="XL" name="size" value="XL">
-              <label for="XL">XL</label>
-              <input type="radio" class="shop__measure" id="XXL" name="size" value="XXL">
-              <label for="XXL">XXL</label>
+          <h4 class="product-form__title text text--h4">Футболка женская  «Всем мира . обнимаю»</h4>
+          <span class="product-form__price text text--h4">1400</span>
+          <p class="product-form__description text text--14 text--grey">Доход от продажи идет в фонд помощи беженцам «Помочь Лично»</p>
+          <form class="product-form__form" id="product-form">
+            <div class="product-form__size-title text text--highlighted-14">Размер</div>
+            <div class="product-form__size-input">
+              <input type="radio" class="product-form__size" id="S" name="size" value="S" checked>
+              <label for="S" class="text text--button-sm">S</label>
+              <input type="radio" class="product-form__size" id="M" name="size" value="M">
+              <label for="M" class="text text--button-sm">M</label>
+              <input type="radio" class="product-form__size" id="L" name="size" value="L">
+              <label for="L" class="text text--button-sm">L</label>
+              <input type="radio" class="product-form__size" id="XL" name="size" value="XL">
+              <label for="XL" class="text text--button-sm">XL</label>
+              <input type="radio" class="product-form__size" id="XXL" name="size" value="XXL">
+              <label for="XXL" class="text text--button-sm">XXL</label>
             </div>
-            <a class="shop__link" href="#">
-              <p class="shop__description shop__description--border">Таблица размеров</p>
-            </a>
-            <div>
-              <div>
-                <label for="shop__phone" class="shop__number">Ваш номер телефона</label>
-                <input type="tel" id="shop__phone" class="shop__input" name="phone" placeholder="+7 (999) 999-99-99">
-                <div id="phone_error" class="error hidden">Номер должен быть введен в формате +7999999999</div>
-                  <p class="shop__description">Мы используем номер телефона только для оформления и доставки заказа</p>
-                </div>
-                <div class="">
-                  <button class="button button--large button--filled button--disabled button--large-modal text text--white text--sm" type="submit">Оформить заказ</button>
-                </div>
-            </div>
+            <a class="product-form__sizes-table-link text text--14 text--grey" href="#">Таблица размеров</a>
+            <label for="product-form-phone" class="product-form__phone-label text text--highlighted-14">Ваш номер телефона</label>
+            <input type="tel" id="product-form-phone" class="product-form__phone-input text text--14" name="phone" placeholder="+7 (999) 999-99-99">
+            <div id="product-form-phone-error" class="product-form__phone-error hidden text text--14 text--red">Номер должен быть введен в формате +7999999999</div>
+            <p class="product-form__phone-privacy text text--14">Мы используем номер телефона только для оформления и доставки заказа</p>
+            <button class="button button--large button--filled button--disabled button--large-modal text text--white text--h4" type="submit">Оформить заказ</button>
           </form>
         </div>
       </div>

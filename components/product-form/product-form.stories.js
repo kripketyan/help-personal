@@ -8,22 +8,22 @@ export default {
 
 export const productForm = () => {
   return `
-  <div class="modal__product">
+  <div class="product">
         <div class="goods-carousel">
           <a href="#" class="good">
-            <img class="good__img" src="/assets/jpeg/t-shirt.jpg" alt="">
+            <img class="good__img" src="./assets/jpeg/t-shirt.jpg" alt="">
           </a>
           <a href="#" class="good">
-            <img class="good__img" src="/assets/jpeg/t-shirt-front.jpg" alt="">
+            <img class="good__img" src="./assets/jpeg/t-shirt-front.jpg" alt="">
           </a>
           <a href="#" class="good">
-            <img class="good__img" src="/assets/jpeg/t-shirt-back.jpg" alt="">
+            <img class="good__img" src="./assets/jpeg/t-shirt-back.jpg" alt="">
           </a>
         </div>
         <div class="wrapper">
           <h4 class="shop__title shop__title--modal">Футболка женская  «Всем мира . обнимаю»</h4>
           <span class="shop__price shop__price--modal">1400</span>
-          <p class="shop__description">Доход от продажи идет в фонд помощи беженцам «Помочь Лично»</p>
+          <p class="product-form__description">Доход от продажи идет в фонд помощи беженцам «Помочь Лично»</p>
           <form id="shop__form">
             <p class="shop__size">Размер</p>
             <div class="shop-form__size">
@@ -39,17 +39,17 @@ export const productForm = () => {
               <label for="XXL">XXL</label>
             </div>
             <a class="shop__link" href="#">
-              <p class="shop__description shop__description--border">Таблица размеров</p>
+              <p class="product-form__description product-form__description--border">Таблица размеров</p>
             </a>
             <div>
               <div>
                 <label for="shop__phone" class="shop__number">Ваш номер телефона</label>
-                <input type="tel" id="shop__phone" class="shop__input" name="phone" placeholder="+7 (999) 999-99-99">
+                <input type="tel" id="shop__phone" class="product-form__phone-input" name="phone" placeholder="+7 (999) 999-99-99">
                 <div id="phone_error" class="error hidden">Номер должен быть введен в формате +7999999999</div>
-                  <p class="shop__description">Мы используем номер телефона только для оформления и доставки заказа</p>
+                  <p class="product-form__description">Мы используем номер телефона только для оформления и доставки заказа</p>
                 </div>
                 <div class="">
-                  <button class="button button--large button--filled button--disabled button--large-modal button__text" type="submit">Оформить заказ</button>
+                  <button class="button button--large button--filled button--disabled button--large-modal text text--white text--sm" type="submit">Оформить заказ</button>
                 </div>
             </div>
           </form>
