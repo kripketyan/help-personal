@@ -159,18 +159,22 @@ p {
 
 @media (min-width: 1440px) {
   .wrapper {
-    padding: 0 128px;
+    width: 1184px;
+    margin: 0 auto;
+    padding: 0;
   }
 
-  .about__title {
-    font-size: 28px;
-    line-height: 130%;
+  .wrapper--rubber {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: unset;
+    margin: unset;
   }
 
   .stats {
     display: grid;
     grid: 1fr 1fr / 1fr 1fr;
-    margin: 120px 0;
+    margin-bottom: 120px;
     gap: 24px;
   }
 
@@ -180,32 +184,35 @@ p {
 
   .reviews {
     padding-left: 128px;
+    margin-bottom: 120px;
   }
 
   .events {
     padding: 64px 0 64px 128px;
   }
 
-  .cards__list {
-    display: flex;
-    gap: 16px;
-  }
-
-  .layout__left {
-    margin-right: 40px;
-    width: 360px;
-    flex-shrink: 0;
+  .about__description {
+    margin-bottom: 40px;
   }
 
   .about__team {
     display: grid;
     grid: 1fr 1fr / 1fr 1fr;
     gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .about__help-button {
+    margin-bottom: 120px;
   }
 
   .cards {
-    /* display: flex; */
-    margin: 120px 0;
+    margin-bottom: 120px;
+  }
+
+  .cards__list {
+    display: flex;
+    gap: 16px;
   }
 
   .shop {
@@ -223,6 +230,12 @@ p {
 
   .layout {
     display: flex;
+    gap: 40px;
+  }
+
+  .layout__left {
+    width: 360px;
+    flex-shrink: 0;
   }
 
   .partners__buttons {

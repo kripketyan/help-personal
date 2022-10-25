@@ -7,8 +7,7 @@
 }
 
 @media (min-width: 1440px) {
-  .logo {
-    width: 140px;
-    height: auto;
+  .logo__img {
+    height: 48px;
   }
 }

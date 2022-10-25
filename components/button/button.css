@@ -48,9 +48,6 @@
   .button--filled-lg {
     background: var(--color-blue);
     border: none;
-  }
-
-  .button--white-lg {
     color: var(--color-white);
   }
 

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Помочь лично</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./components/brief/brief.css">
+    <link rel="stylesheet" href="./components/text/text.css">
     <link rel="stylesheet" href="./components/button/button.css">
+    <link rel="stylesheet" href="./components/brief/brief.css">
     <link rel="stylesheet" href="./components/card/card.css">
     <link rel="stylesheet" href="./components/chip/chip.css">
     <link rel="stylesheet" href="./components/events-carousel/events-carousel.css">
@@ -24,7 +25,6 @@
     <link rel="stylesheet" href="./components/reviews-carousel/reviews-carousel.css">
     <link rel="stylesheet" href="./components/social/social.css">
     <link rel="stylesheet" href="./components/stat/stat.css">
-    <link rel="stylesheet" href="./components/text/text.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
@@ -37,7 +37,7 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.14645 0.146447C6.34171 -0.0488155 6.65829 -0.0488155 6.85355 0.146447L10.8536 4.14645C11.0488 4.34171 11.0488 4.65829 10.8536 4.85355L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L9.29289 5H0.5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4H9.29289L6.14645 0.853553C5.95118 0.658291 5.95118 0.341709 6.14645 0.146447Z" />
       </symbol>
     </svg>
-    <header class="header wrapper">
+    <header class="header wrapper wrapper--rubber">
       <div class="header__container">
         <a class="logo header__logo" href="#">
           <img class="logo__img" src="./assets/svg/logo.svg" alt="логотип фонда помочь лично">
@@ -64,7 +64,7 @@
         </ul>
       </div>
       <div class="header__menu">
-        <a class="button button--black button--filled-lg button--white-lg text text--button-sm" href="#">Помочь</a>
+        <a class="button button--black button--filled-lg text text--button-sm text--button-desktop" href="https://t.me/izh_help_bot">Помочь</a>
         <button class="burger">
           <span class="burger__bar"></span>
           <span class="burger__bar"></span>
@@ -74,8 +74,8 @@
     </header>
     <section class="brief wrapper">
       <div class="brief__left">
-        <h1 class="brief__title text text--h1">Помочь беженцам<br><span class="text text--h1 text--blue">в Ижевске</span></h1>
-        <p class="text text--16">Сейчас в Ижевске около 580 жителей Мариуполя, Луганской и Донецкой
+        <h1 class="brief__title text text--h1 text--h1-desktop">Помочь беженцам<br><span class="text text--h1 text--blue">в Ижевске</span></h1>
+        <p class="text text--16 text--24-desktop">Сейчас в Ижевске около 580 жителей Мариуполя, Луганской и Донецкой
         областей</p>
       </div>
       <div class="brief__right">
@@ -84,7 +84,7 @@
     </section>
     <section class="note wrapper">
       <div class="note__content">
-        <span class="note__text text text--highlighted-16 text--white">За время событий последних месяцев, в Мариуполе разрушено 95% зданий.
+        <span class="note__text text text--highlighted-16 text--white text--h3-desktop">За время событий последних месяцев, в Мариуполе разрушено 95% зданий.
         Люди жили в подвалах неделями. Многие потеряли близких, получили тяжёлые
         ранения.
         </span>
@@ -92,11 +92,11 @@
     </section>
     <section class="about layout wrapper">
       <div class="layout__left">
-        <span class="text text--grey text--16">Как мы помогаем?</span>
-        <h2 class="about__title text text--h3">Мы помогаем персонально каждой семье</h2>
+        <!-- <span class="text text--grey text--16">Как мы помогаем?</span>
+        <h2 class="about__title text text--h3 text--h3-desktop">Мы помогаем персонально каждой семье</h2> -->
       </div>
       <div class="layout__right">
-        <p class="about__description text text--16">
+        <!-- <p class="about__description text text--16">
           Для каждой семьи мы ищем персонального помощника. Он выясняет что нужно и делится ресурсами сообщества. Координаторы делают процесс помощи простым и эффективным для новых участников. Присоединяйтесь:
         </p>
         <div class="chips-group">
@@ -115,25 +115,25 @@
           <a class="chip text text--highlighted-14" href="#">Поиск родственников</a>
         </div>
         <div class="about__help-button">
-          <a class="button button--large button--filled" href="#">
-            <span class="text text--white text--button-md">Помочь</span>
+          <a class="button button--large button--filled" href="https://t.me/izh_help_bot">
+            <span class="text text--white text--button-md text--button-desktop">Помочь</span>
           </a>
-        </div>
+        </div> -->
         <section class="stats">
           <div class="stat">
-            <span class="stat__number text text--h2">162</span>
+            <span class="stat__number text text--h2 text--h2-desktop">162</span>
             <p class="text text--16 text--interline-md">семьи получают нашу поддержку</p>
           </div>
           <div class="stat">
-            <span class="stat__number text text--h2">80</span>
+            <span class="stat__number text text--h2 text--h2-desktop">80</span>
             <p class="text text--16 text--interline-md">волонтеров  персонально помогают семьям</p>
           </div>
           <div class="stat">
-            <span class="stat__number text text--h2">1 841 062 ₽</span>
+            <span class="stat__number text text--h2 text--h2-desktop">1 841 062 ₽</span>
             <p class="text text--16 text--interline-md">собрали жители Ижевска и других городов</p>
           </div>
           <div class="stat">
-            <span class="stat__number text text--h2">1 700 925 ₽</span>
+            <span class="stat__number text text--h2 text--h2-desktop">1 700 925 ₽</span>
             <p class="text text--16 text--interline-md">потрачено на лекарства, предметы первой необходимости, билеты в другие города</p>
           </div>
           <a class="text text--highlighted-16 text--blue" href="#">Подробнее</a>
@@ -148,7 +148,7 @@
               <img class="review__img" src="https://picsum.photos/id/237/200/300" alt="">
             </div>
             <div class="review__content">
-              <span class="review__name text text--highlighted-16 text--bold">Ольга Чеснокова</span>
+              <span class="review__name text text--highlighted-16">Ольга Чеснокова</span>
               <span class="text text--14">45 лет, Мариуполь</span>
             </div>
           </div>
@@ -160,7 +160,7 @@
               <img class="review__img" src="https://picsum.photos/id/237/200/300" alt="">
             </div>
             <div class="review__content">
-              <span class="review__name text text--highlighted-16 text--bold">Ольга Чеснокова</span>
+              <span class="review__name text text--highlighted-16">Ольга Чеснокова</span>
               <span class="text text--14">45 лет, Мариуполь</span>
             </div>
           </div>
@@ -172,7 +172,7 @@
               <img class="review__img" src="https://picsum.photos/id/237/200/300" alt="">
             </div>
             <div class="review__content">
-              <span class="review__name text text--highlighted-16 text--bold">Ольга Чеснокова</span>
+              <span class="review__name text text--highlighted-16">Ольга Чеснокова</span>
               <span class="text text--14">45 лет, Мариуполь</span>
             </div>
           </div>
@@ -180,11 +180,11 @@
         </div>
       </div>
     </section>
-    <section class="cards layout wrapper">
+    <!-- <section class="cards layout wrapper">
       <div class="layout__left">
       </div>
       <div class="layout__right">
-        <h4 class="cards__title text text--h4">Как ты можешь помочь?</h4>
+        <h4 class="cards__title text text--h4 text--h4-desktop">Как ты можешь помочь?</h4>
         <p class="cards__description text text--16">Любой вклад поможет людям скорее вернуться к нормальной жизни</p>
         <div class="cards__list">
           <a class="card" href="#">
@@ -225,11 +225,11 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="about layout wrapper">
       <div class="layout__left">
         <div class="about__hint text text--16 text--grey">Кто мы?</div>
-        <h2 class="about__title text text--h3">Мы простые жители Ижевска</h2>
+        <h2 class="about__title text text--h3 text--h3-desktop">Мы простые жители Ижевска</h2>
       </div>
       <div class="layout__right">
         <p class="about__description text text--16">Так мы понимаем, что нужно людям на самом деле, и они получают
@@ -278,7 +278,7 @@
             </div>
           </div>
         </div>
-        <a class="button button--large button--filled text text--white text--sm" href="#">Присоединиться к команде</a>
+        <a class="button button--large button--filled text text--white text--button-sm text--button-desktop" href="./team.html">Присоединиться к команде</a>
       </div>
     </section>
     <section class="shop wrapper">
@@ -311,7 +311,7 @@
       <h4 class="events__title text text--h4">Дни поддержки беженцев в Ижевске</h4>
       <p class="events__text text text--14">Круги помогают находить больше людей для поддержки проекта. Средства идут на нужды фонда.</p>
       <div class="events__carousel">
-        <a href="#" class="event">
+        <a href="https://vk.com/krugipomochlichno" class="event">
           <img class="event__img" src="https://picsum.photos/id/237/200/300" alt="">
           <div class="event__container">
             <h6 class="event__title text text--h4">Верлигий, сахарный тростник и мемы: пища для ума или наоборот</h6>
@@ -325,7 +325,7 @@
             </div>
           </div>
         </a>
-        <a href="#" class="event">
+        <a href="https://vk.com/krugipomochlichno" class="event">
           <img class="event__img" src="https://picsum.photos/id/237/200/300" alt="">
           <div class="event__container">
             <h6 class="event__title text text--h4">Верлигий, сахарный тростник и мемы: пища для ума или наоборот</h6>
@@ -625,10 +625,10 @@
         </div>
         <div class="partners__buttons">
           <a class="button button--large button--filled button--full" href="#">
-            <span class="text text--button-md text--white">Стать партнером</span>
+            <span class="text text--button-md text--white text--button-desktop">Стать партнером</span>
           </a>
           <a class="button button--black button--large partners__button button--full" href="#">
-            <span class="text text--button-md">Истории сотрудничества</span>
+            <span class="text text--button-md text--button-desktop">Истории сотрудничества</span>
           </a>
         </div>
       </div>
@@ -657,7 +657,7 @@
           <a class="text text--white text--14 footer__link" href="#">Партнерам</a>
         </li>
       </ul>
-      <a class="button footer__button" href="#">
+      <a class="button footer__button" href="https://t.me/izh_help_bot">
         <span class="text text--button-sm text--white">Помочь</span>
       </a>
       <div class="footer__social social">
@@ -739,8 +739,8 @@
         </ul>
       </div>
       <div>
-        <a class="button footer__button" href="#">
-          <span class="text text--white text--sm">Помочь</span>
+        <a class="button footer__button" href="https://t.me/izh_help_bot">
+          <span class="text text--white text--button-sm">Помочь</span>
         </a>
         <div class="footer__copyright">© Помочь лично 2022</div>
       </div>

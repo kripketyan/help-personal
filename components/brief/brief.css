@@ -3,7 +3,7 @@
 }
 
 .brief__title {
-  margin: 0 0 16px;
+  margin-bottom: 16px;
 }
 
 .brief__img {
@@ -11,19 +11,15 @@
 }
 
 @media (min-width: 1440px) {
-  .brief__title {
-    font-size: 88px;
-    line-height: 88px;
-  }
-
   .brief {
     display: flex;
     align-items: center;
-    margin: 80px 0 0;
+    gap: 72px;
+    margin-bottom: 64px;
   }
 
-  .brief__left {
-    margin-right: 72px;
+  .brief__title {
+    margin-bottom: 24px;
   }
 
   .brief__img {
