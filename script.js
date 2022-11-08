@@ -26,7 +26,7 @@ $(document).ready(function () {
   });
 
   $(function () {
-    $(".good").click(function (event) {
+    $(".good__price").click(function (event) {
       event.preventDefault();
 
       renderProductPageIntoModal();
@@ -113,7 +113,14 @@ $(document).ready(function () {
   }
 
   function setupGoodsCarousel(index, element) {
-    setupCarousel(element, {});
+    const options = {};
+
+    if (SETTINGS.isDesktop) {
+      options.slidesToShow = 4;
+      options.variableWidth = false;
+    }
+
+    setupCarousel(element, options);
   }
 
   function setupGoodsCarouselToModal(index, element) {

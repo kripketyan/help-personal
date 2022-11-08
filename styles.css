@@ -216,7 +216,8 @@ p {
   }
 
   .shop {
-    margin: 120px 0 64px;
+    margin-top: 120px;
+    margin-bottom: 64px;
   }
 
   .events__logo {
@@ -226,6 +227,11 @@ p {
 
   .events__title {
     font-size: 20px;
+    width: 358px;
+  }
+
+  .events__text {
+    width: 358px;
   }
 
   .layout {

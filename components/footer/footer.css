@@ -48,16 +48,28 @@
     display: none;
   }
 
+  .footer__list {
+    margin: 0;
+  }
+
   .footer__button {
     margin: 0;
+    padding: 7.5px 47px;
+    width: unset;
+  }
+
+  .footer__item {
+    text-align: left;
   }
 
   .footer__item:last-child {
     margin-bottom: 0;
   }
 
-  .footer__copyright {
-    padding: 27px 0 0 0;
+  .footer__copyright-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .footer--show-lg {

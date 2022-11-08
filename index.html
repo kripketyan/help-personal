@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Помочь лично</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./components/text/text.css">
-    <link rel="stylesheet" href="./components/button/button.css">
-    <link rel="stylesheet" href="./components/brief/brief.css">
-    <link rel="stylesheet" href="./components/card/card.css">
-    <link rel="stylesheet" href="./components/chip/chip.css">
-    <link rel="stylesheet" href="./components/events-carousel/events-carousel.css">
-    <link rel="stylesheet" href="./components/footer/footer.css">
-    <link rel="stylesheet" href="./components/goods-carousel/goods-carousel.css">
-    <link rel="stylesheet" href="./components/header/header.css">
-    <link rel="stylesheet" href="./components/logo/logo.css">
-    <link rel="stylesheet" href="./components/modal/modal.css">
-    <link rel="stylesheet" href="./components/note/note.css">
-    <link rel="stylesheet" href="./components/order-success/order-success.css">
-    <link rel="stylesheet" href="./components/partner/partner.css">
-    <link rel="stylesheet" href="./components/product-form/product-form.css">
-    <link rel="stylesheet" href="./components/quote/quote.css">
-    <link rel="stylesheet" href="./components/reviews-carousel/reviews-carousel.css">
-    <link rel="stylesheet" href="./components/social/social.css">
-    <link rel="stylesheet" href="./components/stat/stat.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/components/text/text.css">
+    <link rel="stylesheet" href="/components/button/button.css">
+    <link rel="stylesheet" href="/components/brief/brief.css">
+    <link rel="stylesheet" href="/components/card/card.css">
+    <link rel="stylesheet" href="/components/chip/chip.css">
+    <link rel="stylesheet" href="/components/events-carousel/events-carousel.css">
+    <link rel="stylesheet" href="/components/footer/footer.css">
+    <link rel="stylesheet" href="/components/goods-carousel/goods-carousel.css">
+    <link rel="stylesheet" href="/components/header/header.css">
+    <link rel="stylesheet" href="/components/logo/logo.css">
+    <link rel="stylesheet" href="/components/modal/modal.css">
+    <link rel="stylesheet" href="/components/note/note.css">
+    <link rel="stylesheet" href="/components/order-success/order-success.css">
+    <link rel="stylesheet" href="/components/partner/partner.css">
+    <link rel="stylesheet" href="/components/product-form/product-form.css">
+    <link rel="stylesheet" href="/components/quote/quote.css">
+    <link rel="stylesheet" href="/components/reviews-carousel/reviews-carousel.css">
+    <link rel="stylesheet" href="/components/social/social.css">
+    <link rel="stylesheet" href="/components/stat/stat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
@@ -39,27 +39,27 @@
     </svg>
     <header class="header wrapper wrapper--rubber">
       <div class="header__container">
-        <a class="logo header__logo" href="#">
-          <img class="logo__img" src="./assets/svg/logo.svg" alt="логотип фонда помочь лично">
+        <a class="logo header__logo" href="/">
+          <img class="logo__img" src="/assets/svg/logo.svg" alt="логотип фонда помочь лично">
         </a>
         <ul class="header__list">
           <li class="header__item">
-            <a class="text text--grey text--16" href="#">Как помочь?</a>
+            <a class="text text--grey text--16" href="/">Как помочь?</a>
           </li>
           <li class="header__item">
-            <a class="text text--grey text--16" href="#">События</a>
+            <a class="text text--grey text--16" href="#events">События</a>
           </li>
           <li class="header__item">
-            <a class="text text--grey text--16" href="./team.html">Наша команда</a>
+            <a class="text text--grey text--16" href="/team.html">Наша команда</a>
           </li>
           <li class="header__item">
-            <a class="text text--grey text--16" href="#">Отчет</a>
+            <a class="text text--grey text--16" href="#stats">Отчет</a>
           </li>
           <li class="header__item">
-            <a class="text text--grey text--16" href="#">Беженцам</a>
+            <a class="text text--grey text--16" href="/">Беженцам</a>
           </li>
           <li class="header__item">
-            <a class="text text--grey text--16" href="#">Партнерам</a>
+            <a class="text text--grey text--16" href="#partners">Партнерам</a>
           </li>
         </ul>
       </div>
@@ -74,12 +74,12 @@
     </header>
     <section class="brief wrapper">
       <div class="brief__left">
-        <h1 class="brief__title text text--h1 text--h1-desktop">Помочь беженцам<br><span class="text text--h1 text--blue">в Ижевске</span></h1>
+        <h1 class="brief__title text text--h1 text--h1-desktop">Помочь беженцам<br><span class="text text--h1 text--h1-desktop text--blue">в Ижевске</span></h1>
         <p class="text text--16 text--24-desktop">Сейчас в Ижевске около 580 жителей Мариуполя, Луганской и Донецкой
         областей</p>
       </div>
       <div class="brief__right">
-        <img class="brief__img" src="./assets/svg/bubble.svg" alt="">
+        <img class="brief__img" src="/assets/svg/bubble.svg" alt="">
       </div>
     </section>
     <section class="note wrapper">
@@ -119,7 +119,7 @@
             <span class="text text--white text--button-md text--button-desktop">Помочь</span>
           </a>
         </div> -->
-        <section class="stats">
+        <section class="stats" id="stats">
           <div class="stat">
             <span class="stat__number text text--h2 text--h2-desktop">162</span>
             <p class="text text--16 text--interline-md">семьи получают нашу поддержку</p>
@@ -278,36 +278,46 @@
             </div>
           </div>
         </div>
-        <a class="button button--large button--filled text text--white text--button-sm text--button-desktop" href="./team.html">Наша команда</a>
+        <a class="button button--large button--filled text text--white text--button-sm text--button-desktop" href="/team.html">Наша команда</a>
       </div>
     </section>
     <section class="shop wrapper">
       <h4 class="shop__title text text--h4">Mерч «Всем мира . обнимаю»</h4>
       <div class="goods-carousel">
-        <a href="#" class="good">
-          <img class="good__img" src="./assets/jpeg/t-shirt.jpg" alt="">
+        <div class="good">
+          <img class="good__img" src="/assets/jpeg/t-shirt.jpg" alt="">
           <span class="good__title text text--highlighted-16">Футболка женская</span>
-          <span class="good__price text text--button-sm" href="#">Купить за 1400₽</span>
-        </a>
-        <a href="#" class="good">
-          <img class="good__img" src="./assets/jpeg/hoodie.jpg" alt="">
+          <button class="good__price text text--button-sm">Купить за 1400₽</button>
+        </div>
+        <div class="good">
+          <img class="good__img" src="/assets/jpeg/hoodie.jpg" alt="">
           <span class="good__title text text--highlighted-16">Теплое худи унисекс</span>
-          <span class="good__price text text--button-sm" href="#">Купить за 1400₽</span>
-        </a>
-        <a href="#" class="good">
-          <img class="good__img" src="./assets/jpeg/t-shirt.jpg" alt="">
+          <button class="good__price text text--button-sm">Купить за 1400₽</button>
+        </div>
+        <div class="good">
+          <img class="good__img" src="/assets/jpeg/t-shirt.jpg" alt="">
           <span class="good__title text text--highlighted-16">Футболка женская</span>
-          <span class="good__price text text--button-sm" href="#">Купить за 1400₽</span>
-        </a>
-        <a href="#" class="good">
-          <img class="good__img" src="./assets/jpeg/underpants.jpg" alt="">
+          <button class="good__price text text--button-sm">Купить за 1400₽</butt>
+        </div>
+        <div class="good">
+          <img class="good__img" src="/assets/jpeg/underpants.jpg" alt="">
           <span class="good__title text text--highlighted-16">Трусики</span>
-          <span class="good__price text text--button-sm" href="#">Купить за 1400₽</span>
+          <button class="good__price text text--button-sm">Купить за 1400₽</butt>
+        </div>
+        <div class="good">
+          <img class="good__img" src="/assets/jpeg/t-shirt.jpg" alt="">
+          <span class="good__title text text--highlighted-16">Футболка женская</span>
+          <button class="good__price text text--button-sm">Купить за 1400₽</button>
+        </div>
+        <div class="good">
+          <img class="good__img" src="/assets/jpeg/underpants.jpg" alt="">
+          <span class="good__title text text--highlighted-16">Трусики</span>
+          <button class="good__price text text--button-sm">Купить за 1400₽</butt>
         </a>
       </div>
     </section>
-    <section class="events">
-      <img class="events__logo" src="./assets/svg/krugi logo.svg" alt="логотип мероприятий круги">
+    <section class="events" id="events">
+      <img class="events__logo" src="/assets/svg/krugi logo.svg" alt="логотип мероприятий круги">
       <h4 class="events__title text text--h4">Дни поддержки беженцев в Ижевске</h4>
       <p class="events__text text text--14">Круги помогают находить больше людей для поддержки проекта. Средства идут на нужды фонда.</p>
       <div class="events__carousel">
@@ -341,7 +351,7 @@
         </a>
       </div>
     </section>
-    <section class="partners about layout wrapper">
+    <section class="partners about layout wrapper" id="partners">
       <div class="layout__left">
         <span class="about__hint text text--16 text--grey">Кто с нами?</span>
         <h2 class="about__title text text--h3">Мы сотрудничаем с бизнесом Ижевска</h2>
@@ -358,7 +368,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/65apps.svg" alt="логотип 65 apps">
+              <img class="partner__img" src="/assets/svg/65apps.svg" alt="логотип 65 apps">
             </div>
             <h5 class="partner__title text text--14">Мобильные приложения</h5>
           </a>
@@ -371,7 +381,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/optima.jpg" alt="логотип компании Оптима ">
+              <img class="partner__img" src="/assets/jpeg/optima.jpg" alt="логотип компании Оптима ">
             </div>
             <h5 class="partner__title text text--14">Косметика и товары для дома</h5>
           </a>
@@ -384,7 +394,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/tastycoffee.svg" alt="логотип кофеен tasty coffee">
+              <img class="partner__img" src="/assets/svg/tastycoffee.svg" alt="логотип кофеен tasty coffee">
             </div>
             <h5 class="partner__title text text--14">Свежеобжаренный кофе</h5>
           </a>
@@ -397,7 +407,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/elma.svg" alt="логотип компании Elma">
+              <img class="partner__img" src="/assets/svg/elma.svg" alt="логотип компании Elma">
             </div>
             <h5 class="partner__title text text--14">Система управления бизнес-процессами</h5>
           </a>
@@ -410,7 +420,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/zeon.svg" alt="логотип магазина электроники Зеон">
+              <img class="partner__img" src="/assets/svg/zeon.svg" alt="логотип магазина электроники Зеон">
             </div>
             <h5 class="partner__title text text--14">Магазин электроники</h5>
           </a>
@@ -423,7 +433,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/bungly bo.svg" alt="логотип магазина Bungly Boо">
+              <img class="partner__img" src="/assets/svg/bungly bo.svg" alt="логотип магазина Bungly Boо">
             </div>
             <h5 class="partner__title text text--14">Производство одежды для детей и семей</h5>
           </a>
@@ -436,7 +446,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/kuzebai.svg" alt="логотип книжной лавки Кузебай">
+              <img class="partner__img" src="/assets/svg/kuzebai.svg" alt="логотип книжной лавки Кузебай">
             </div>
             <h5 class="partner__title text text--14">Книжная лавка</h5>
           </a>
@@ -449,7 +459,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/izhmebel.svg" alt="логотип магазина Ижмебель">
+              <img class="partner__img" src="/assets/svg/izhmebel.svg" alt="логотип магазина Ижмебель">
             </div>
             <h5 class="partner__title text text--14">Производство мебели</h5>
           </a>
@@ -462,7 +472,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/green bra.jpg" alt="логотип компании Green Bra ">
+              <img class="partner__img" src="/assets/jpeg/green bra.jpg" alt="логотип компании Green Bra ">
             </div>
             <h5 class="partner__title text text--14">Нижнее белье из натуральных тканей</h5>
           </a>
@@ -475,7 +485,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/ctm coffee.svg" alt="логотип производственной компании CTM Coffe">
+              <img class="partner__img" src="/assets/svg/ctm coffee.svg" alt="логотип производственной компании CTM Coffe">
             </div>
             <h5 class="partner__title text text--14">Свежеобжаренный кофе</h5>
           </a>
@@ -488,7 +498,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/ptiza.svg" alt="логотип театра Птица">
+              <img class="partner__img" src="/assets/svg/ptiza.svg" alt="логотип театра Птица">
             </div>
             <h5 class="partner__title text text--14">Театральная студия</h5>
           </a>
@@ -501,7 +511,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/svet.svg" alt="логотип бара Свет">
+              <img class="partner__img" src="/assets/svg/svet.svg" alt="логотип бара Свет">
             </div>
             <h5 class="partner__title text text--14">Бар</h5>
           </a>
@@ -514,7 +524,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/radian.svg" alt="логотип магазина Радиан">
+              <img class="partner__img" src="/assets/svg/radian.svg" alt="логотип магазина Радиан">
             </div>
             <h5 class="partner__title text text--14">Производство пластмассовых изделий</h5>
           </a>
@@ -527,7 +537,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/grass.jpg" alt="логотип лаборатория экоустойчивого дизайна Grass">
+              <img class="partner__img" src="/assets/jpeg/grass.jpg" alt="логотип лаборатория экоустойчивого дизайна Grass">
             </div>
             <h5 class="partner__title text text--14">Лаборатория экоустойчивого дизайна</h5>
           </a>
@@ -540,7 +550,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/nado.jpg" alt="логотип компании Nado ">
+              <img class="partner__img" src="/assets/jpeg/nado.jpg" alt="логотип компании Nado ">
             </div>
             <h5 class="partner__title text text--14">Производство сумок из натуральной кожи</h5>
           </a>
@@ -553,7 +563,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/talan.jpg" alt="логотип компании Талан ">
+              <img class="partner__img" src="/assets/jpeg/talan.jpg" alt="логотип компании Талан ">
             </div>
             <h5 class="partner__title text text--14">Девелопмент и строительство</h5>
           </a>
@@ -566,7 +576,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/svg/wg.svg" alt="логотип компании Welcome Group ">
+              <img class="partner__img" src="/assets/svg/wg.svg" alt="логотип компании Welcome Group ">
             </div>
             <h5 class="partner__title text text--14">Кафе, рестораны</h5>
           </a>
@@ -579,7 +589,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/neo.jpg" alt="логотип стоматологической клиники Нео">
+              <img class="partner__img" src="/assets/jpeg/neo.jpg" alt="логотип стоматологической клиники Нео">
             </div>
             <h5 class="partner__title text text--14">Стоматологическая клиника Нео</h5>
           </a>
@@ -592,7 +602,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/" alt="логотип компании Pizzup ">
+              <img class="partner__img" src="/assets/" alt="логотип компании Pizzup ">
             </div>
             <h5 class="partner__title">Пицца фикспрайс</h5>
           </a> -->
@@ -605,7 +615,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/codologia.jpg" alt="логотип школы программирования Codologia">
+              <img class="partner__img" src="/assets/jpeg/codologia.jpg" alt="логотип школы программирования Codologia">
             </div>
             <h5 class="partner__title text text--14">Школа программирования Codologia</h5>
           </a>
@@ -618,7 +628,7 @@
               </div>
             </div>
             <div class="partner__container">
-              <img class="partner__img" src="./assets/jpeg/capital.jpg" alt="логотип организации креативный капитал">
+              <img class="partner__img" src="/assets/jpeg/capital.jpg" alt="логотип организации креативный капитал">
             </div>
             <h5 class="partner__title text text--14">Развитие креативного класса и гражданского общества</h5>
           </a>
@@ -635,26 +645,26 @@
     </section>
     <footer class="footer">
       <div class="footer__logo">
-        <a class="text text--white text--16 text--interline-sm" href="#">помочь-лично.рф</a>
+        <a class="text text--white text--16 text--interline-sm" href="/">помочь-лично.рф</a>
       </div>
       <ul class="footer__list">
         <li class="footer__item">
-          <a class="text text--white text--14 footer__link" href="#">Как помочь?</a>
+          <a class="text text--white text--14 footer__link" href="/">Как помочь?</a>
         </li>
         <li class="footer__item">
-          <a class="text text--white text--14 footer__link" href="#">События</a>
+          <a class="text text--white text--14 footer__link" href="#events">События</a>
         </li>
         <li class="footer__item">
-          <a class="text text--white text--14 footer__link" href="./team.html">Наша команда</a>
+          <a class="text text--white text--14 footer__link" href="/team.html">Наша команда</a>
         </li>
         <li class="footer__item">
-          <a class="text text--white text--14 footer__link" href="#">Отчет</a>
+          <a class="text text--white text--14 footer__link" href="#stats">Отчет</a>
         </li>
         <li class="footer__item">
-          <a class="text text--white text--14 footer__link" href="#">Беженцам</a>
+          <a class="text text--white text--14 footer__link" href="/">Беженцам</a>
         </li>
         <li class="footer__item">
-          <a class="text text--white text--14 footer__link" href="#">Партнерам</a>
+          <a class="text text--white text--14 footer__link" href="#partners">Партнерам</a>
         </li>
       </ul>
       <a class="button footer__button" href="https://t.me/izh_help_bot">
@@ -675,19 +685,12 @@
             </svg>
           </a>
         </div>
-        <div>
-          <a class="social__icon" href="#">
-            <svg width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 10.5196C18 6.07431 14.4183 2.4707 10 2.4707C5.58172 2.4707 2 6.07431 2 10.5196C2 14.537 4.92548 17.8669 8.75 18.4707V12.8462H6.71875V10.5196H8.75V8.74632C8.75 6.72907 9.94434 5.6148 11.7717 5.6148C12.647 5.6148 13.5625 5.77201 13.5625 5.77201V7.75279H12.5537C11.5599 7.75279 11.25 8.37323 11.25 9.00975V10.5196H13.4688L13.1141 12.8462H11.25V18.4707C15.0745 17.8669 18 14.537 18 10.5196Z" fill="white"/>
-              </svg>
-          </a>
-        </div>
       </div>
       <div class="footer__copyright text text--14 text--white">© Помочь лично 2022</div>
     </footer>
     <footer class="footer--show-lg">
       <div>
-        <a class="text text--white text--interline-sm" href="#">помочь-лично.рф</a>
+        <a class="text text--white text--interline-sm" href="/">помочь-лично.рф</a>
         <div class="social">
           <div>
             <a class="social__icon" href="https://t.me/izh_help">
@@ -703,46 +706,39 @@
               </svg>
             </a>
           </div>
-          <div>
-            <a class="social__icon" href="#">
-              <svg width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 10.5196C18 6.07431 14.4183 2.4707 10 2.4707C5.58172 2.4707 2 6.07431 2 10.5196C2 14.537 4.92548 17.8669 8.75 18.4707V12.8462H6.71875V10.5196H8.75V8.74632C8.75 6.72907 9.94434 5.6148 11.7717 5.6148C12.647 5.6148 13.5625 5.77201 13.5625 5.77201V7.75279H12.5537C11.5599 7.75279 11.25 8.37323 11.25 9.00975V10.5196H13.4688L13.1141 12.8462H11.25V18.4707C15.0745 17.8669 18 14.537 18 10.5196Z" fill="white"/>
-                </svg>
-            </a>
-          </div>
         </div>
       </div>
       <div>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#">Как помочь?</a>
+            <a class="footer__link text text--14 text--white" href="/">Как помочь?</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">События</a>
+            <a class="footer__link text text--14 text--white" href="#events">События</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="./team.html">Наша команда</a>
+            <a class="footer__link text text--14 text--white" href="/team.html">Наша команда</a>
           </li>
         </ul>
       </div>
       <div>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#">Отчет</a>
+            <a class="footer__link text text--14 text--white" href="#stats">Отчет</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Беженцам</a>
+            <a class="footer__link text text--14 text--white" href="/">Беженцам</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Партнерам</a>
+            <a class="footer__link text text--14 text--white" href="#partners">Партнерам</a>
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer__copyright-container">
         <a class="button footer__button" href="https://t.me/izh_help_bot">
           <span class="text text--white text--button-sm">Помочь</span>
         </a>
-        <div class="footer__copyright">© Помочь лично 2022</div>
+        <div class="footer__copyright text text--14 text--white">© Помочь лично 2022</div>
       </div>
     </footer>
     <section class="modal">
@@ -757,17 +753,17 @@
     <template id="product-form-template">
       <div class="product-form">
         <div class="goods-carousel product-form__preview">
-          <a href="#" class="good">
-            <img class="good__img" src="./assets/jpeg/t-shirt.jpg" alt="">
+          <a href="#" class="good product-form__slide">
+            <img class="good__img product-form__image" src="/assets/jpeg/t-shirt.jpg" alt="">
           </a>
-          <a href="#" class="good">
-            <img class="good__img" src="./assets/jpeg/t-shirt-front.jpg" alt="">
+          <a href="#" class="good product-form__slide">
+            <img class="good__img product-form__image" src="/assets/jpeg/t-shirt-front.jpg" alt="">
           </a>
-          <a href="#" class="good">
-            <img class="good__img" src="./assets/jpeg/t-shirt-back.jpg" alt="">
+          <a href="#" class="good product-form__slide">
+            <img class="good__img product-form__image" src="/assets/jpeg/t-shirt-back.jpg" alt="">
           </a>
         </div>
-        <div class="wrapper">
+        <div class="wrapper product-form__content">
           <h4 class="product-form__title text text--h4">Футболка женская  «Всем мира . обнимаю»</h4>
           <span class="product-form__price text text--h4">1400</span>
           <p class="product-form__description text text--14 text--grey">Доход от продажи идет в фонд помощи беженцам «Помочь Лично»</p>
@@ -798,7 +794,7 @@
 
     <template id="order-success-template">
       <div class="order-success wrapper">
-        <img class="order-success__img" src="./assets/svg/order.svg" alt="спасибо за заказ">
+        <img class="order-success__img" src="/assets/svg/order.svg" alt="спасибо за заказ">
         <span class="order-success__title">Спасибо за заказ!</span>
         <p class="order-success__text">Волонтер фонда свяжется с вами в течение дня, чтобы согласовать удобный способ оплаты и доставки заказа</p>
         <button class="button button--large button--filled button--large-modal text text--white text--h4">Понятно!</button>
@@ -807,6 +803,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

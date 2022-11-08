@@ -37,5 +37,11 @@
 @media (min-width: 1440px) {
   .review {
     width: 385px;
+    padding: 32px;
+    padding-bottom: 36px;
+  }
+
+  .review__name {
+    margin-bottom: 4px;
   }
 }

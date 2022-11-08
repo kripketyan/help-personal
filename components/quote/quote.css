@@ -35,4 +35,9 @@
     width: 384px;
     box-sizing: border-box;
   }
+
+  .quote__content {
+    display: flex;
+    flex-direction: column;
+  }
 }

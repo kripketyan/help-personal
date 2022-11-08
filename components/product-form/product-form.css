@@ -91,5 +91,38 @@
 @media (min-width: 1440px) {
   .product-form {
     display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  .product-form .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .product-form__preview {
+    width: 350px;
+    margin-bottom: 0;
+  }
+
+  .product-form__slide {
+    display: inline-block;
+    height: 100%;
+    margin-right: 24px;
+  }
+
+  .product-form__image {
+    width: 350px;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .product-form__content {
+    width: unset;
+  }
+
+  .product-form__content {
+    width: 358px;
+    margin: unset;
   }
 }

@@ -4,6 +4,7 @@
 }
 
 .stat__number {
+  display: inline-block;
   margin-bottom: 8px;
 }
 

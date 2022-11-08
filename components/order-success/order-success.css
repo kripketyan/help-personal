@@ -29,6 +29,7 @@
 
 @media (min-width: 1440px) {
   .order-success {
+    width: auto;
     margin: 0;
   }
 
