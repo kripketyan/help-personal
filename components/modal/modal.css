@@ -39,8 +39,7 @@
 }
 
 .modal__icon {
-  /* TODO поменять путь, когда сайт захостится */
-  background-image: url("../../assets/svg/cross.svg");
+  background-image: url("/assets/svg/cross.svg");
   width: 18px;
   height: 18px;
   border: none;
