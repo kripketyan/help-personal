@@ -88,6 +88,21 @@
   border-color: var(--color-red);
 }
 
+@media (max-width: 1440px) {
+  .product-form__slide {
+    display: inline-flex !important;
+    justify-content: center;
+    height: 385px !important;
+    width: 300px;
+    overflow: hidden;
+  }
+
+  .product-form__image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 @media (min-width: 1440px) {
   .product-form {
     display: flex;

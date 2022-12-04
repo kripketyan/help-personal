@@ -6,7 +6,7 @@
 .good__img {
   display: block;
   width: 100%;
-  border-radius: 24px;
+  border-radius: 16px;
   margin-bottom: 16px;
 }
 
@@ -24,6 +24,7 @@
 
 @media (min-width: 1440px) {
   .good {
+    width: 284px;
     margin: 0 16px 0 0;
   }
 }

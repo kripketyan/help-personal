@@ -116,8 +116,8 @@ $(document).ready(function () {
     const options = {};
 
     if (SETTINGS.isDesktop) {
-      options.slidesToShow = 4;
-      options.variableWidth = false;
+      // options.slidesToShow = 4;
+      options.variableWidth = true;
     }
 
     setupCarousel(element, options);
@@ -129,6 +129,8 @@ $(document).ready(function () {
     if (SETTINGS.isDesktop) {
       options.slidesToShow = 1;
       options.variableWidth = false;
+    } else {
+      options.centerMode = true;
     }
 
     setupCarousel(element, options);
