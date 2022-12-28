@@ -255,7 +255,7 @@ p {
 }
 
 @media (max-width: 400px) {
-  .partners_list {
+  .partners__list {
     column-count: 1;
   }
 }
