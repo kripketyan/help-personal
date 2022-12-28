@@ -253,9 +253,3 @@ p {
     padding-top: 64px;
   }
 }
-
-@media (max-width: 400px) {
-  .partners__list {
-    column-count: 1;
-  }
-}

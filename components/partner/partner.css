@@ -66,3 +66,9 @@
     display: block;
   }
 }
+
+@media (max-width: 400px) {
+  .partners_list {
+    column-count: 1;
+  }
+}
